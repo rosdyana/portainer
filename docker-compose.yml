@@ -2,7 +2,7 @@ version: '2'
 
 services:
   portainer:
-    image: portainer/portainer
+    image: portainer/portainer:alpine
     # https://portainer.readthedocs.io/en/stable/configuration.html#available-flags
     command: ["-H", "unix:///var/run/docker.sock", "--no-analytics"] 
     restart: always
